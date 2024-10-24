@@ -3,11 +3,9 @@ import {
   Typography, 
   Card, 
   CardContent, 
-  Grid,
   Box,
   Divider,
   CircularProgress,
-  Paper,
   Chip
 } from '@mui/material';
 import { getRules } from '../services/api';
