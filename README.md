@@ -71,7 +71,7 @@ Before you begin, ensure you have met the following requirements:
 
 2. Open your browser and navigate to `http://localhost:3000` to use the application.
 
-Note: This frontend application requires the backend to be running. The backend repository can be found at [https://github.com/shrey258/zeotap_app2_frontend](https://github.com/shrey258/zeotap_app2_frontend).
+Note: This frontend application requires the backend to be running. The backend repository can be found at [https://github.com/shrey258/zeotap_app1_backend](https://github.com/shrey258/zeotap_app1_backend).
 
 ## API Endpoints
 
