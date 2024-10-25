@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: process.env.API_URL,  // Adjust based on your backend setup
+    baseURL: 'https://zeotap-app1-backend.vercel.app/api',
     headers: {
         'Content-Type': 'application/json'
     }
