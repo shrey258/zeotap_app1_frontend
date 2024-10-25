@@ -1,4 +1,4 @@
-# Rule Engine App
+# Rule Engine App Frontend
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -14,7 +14,7 @@
 
 ## Introduction
 
-The Rule Engine App is a powerful and flexible tool designed to create, manage, evaluate, and combine complex business rules. It provides a user-friendly interface for defining rules, evaluating data against these rules, and combining multiple rules to create more complex logic.
+The Rule Engine App is a powerful and flexible tool designed to create, manage, evaluate, and combine complex business rules. This repository contains the frontend part of the application, providing a user-friendly interface for defining rules, evaluating data against these rules, and combining multiple rules to create more complex logic.
 
 ## Features
 
@@ -26,14 +26,10 @@ The Rule Engine App is a powerful and flexible tool designed to create, manage, 
 
 ## Technologies Used
 
-- Frontend:
-  - React.js
-  - Material-UI (MUI)
-  - React Router
-- Backend:
-  - Node.js
-  - Express.js
-  - MongoDB
+- React.js
+- Material-UI (MUI)
+- React Router
+- Axios for API calls
 
 ## Design Choices
 
@@ -45,70 +41,74 @@ The Rule Engine App is a powerful and flexible tool designed to create, manage, 
 
 4. **Responsive Design**: The navbar and overall layout are designed to be responsive, providing a seamless experience across different device sizes.
 
-5. **RESTful API**: The backend follows RESTful principles for clear and predictable API endpoints.
-
-6. **MongoDB**: Chosen for its flexibility with unstructured data, which is beneficial for storing complex rule structures.
-
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
 - Node.js (v14.0.0 or later)
 - npm (v6.0.0 or later)
-- MongoDB (v4.0 or later)
 
 ## Installation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/rule-engine-app.git
-   cd rule-engine-app
+   git clone https://github.com/shrey258/zeotap_app1_frontend.git
+   cd zeotap_app1_frontend
    ```
 
-2. Install backend dependencies:
+2. Install dependencies:
    ```
-   cd backend
-   npm install
-   ```
-
-3. Install frontend dependencies:
-   ```
-   cd ../frontend
    npm install
    ```
 
 ## Running the Application
 
-1. Start the MongoDB service on your machine.
-
-2. Start the backend server:
+1. Start the frontend development server:
    ```
-   cd backend
-   npm start
-   ```
-   The server will start on `http://localhost:5000` by default.
-
-3. In a new terminal, start the frontend development server:
-   ```
-   cd frontend
    npm start
    ```
    The React app will start on `http://localhost:3000`.
 
-4. Open your browser and navigate to `http://localhost:3000` to use the application.
+2. Open your browser and navigate to `http://localhost:3000` to use the application.
+
+Note: This frontend application requires the backend to be running. The backend repository can be found at [https://github.com/shrey258/zeotap_app2_frontend](https://github.com/shrey258/zeotap_app2_frontend).
 
 ## API Endpoints
 
-- `POST /api/rules`: Create a new rule
-- `GET /api/rules`: Get all rules
-- `POST /api/evaluate`: Evaluate data against rules
-- `POST /api/combine`: Combine multiple rules
+The frontend interacts with the following API endpoints:
 
-For detailed API documentation, please refer to the [API Documentation](API_DOCUMENTATION.md) file.
+- `POST /api/rules/create`: Create a new rule
+- `GET /api/rules`: Get all rules
+- `POST /api/rules/evaluate`: Evaluate data against rules
+- `POST /api/rules/combine`: Combine multiple rules
+
+These endpoints are handled by the backend application.
+
+## Project Structure
+
+```
+zeotap_app1_frontend/
+├── .vercel/
+├── build/
+├── node_modules/
+├── public/
+├── src/
+│   ├── components/
+│   ├── services/
+│   ├── styles/
+│   ├── .env
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── LICENSE
+├── package-lock.json
+├── package.json
+└── README.md
+```
 
 ## Contributing
 
-Contributions to the Rule Engine App are welcome. Please follow these steps to contribute:
+Contributions to the Rule Engine App Frontend are welcome. Please follow these steps to contribute:
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/AmazingFeature`)
